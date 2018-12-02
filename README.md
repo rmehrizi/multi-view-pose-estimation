@@ -27,15 +27,6 @@ wget https://www.googledrive/....
 python train4view.py
 ```
 
-## raining 
-1- Edit train4view.py to set path/to/caffe/python/ and change validation_mode to "True". <br />
-2- Download the pre-trained model and Check tracking results in PoseEstimator/result/. <br />
-```
-cd PoseEstomator
-wget https://www.googledrive/....
-python train4view.py
-```
-
 ## Training 
 Training is performed in two steps: <br />
 ###### First Step (single-view):
