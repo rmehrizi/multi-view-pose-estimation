@@ -29,7 +29,7 @@ python train4view.py
 
 ##Training 
 Training is performed in two steps:
-####First Step (single-view):
+######First Step (single-view):
 1- Edit options/base-options to set "  " to " " . <br />
 2- Edit options/train-options to set " lr " to " " . <br />
 3- Run train.py to train the model (2 blocks) and save the best model in exp/single-view
@@ -37,7 +37,7 @@ Training is performed in two steps:
 cd PoseEstomator
 python train.py
 ```
-###Second Step (single-view):
+######Second Step (single-view):
 1- Edit options/base-options to set "  " to " " . <br />
 2- Edit options/train-options to set " lr " to " " . <br />
 3- Run train4view.py to train the model (4 blocks) and save the best model in exp/multi-view
