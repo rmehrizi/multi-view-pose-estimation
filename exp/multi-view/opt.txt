@@ -1,0 +1,21 @@
+------------ Options -------------
+best_pckh: 0.0
+bs: 64
+data_dir: ./dataset
+display_freq: 10
+display_winsize: 256
+exp_dir: ./exp
+exp_id: multi-view
+gpu_id: 0
+is_train: True
+load_checkpoint: False
+lr: 0.0001
+nEpochs: 5
+nThreads: 3
+print_freq: 10
+resume_prefix: 
+train_list: train_list.txt
+use_html: False
+use_visdom: True
+val_list: val_list.txt
+-------------- End ----------------
