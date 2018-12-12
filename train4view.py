@@ -21,7 +21,7 @@ from linear4view import MakeLinearModel
 import PXIO
 from Plot import Plot2d, Plot3d
 
-evaluate_mode= True
+evaluate_mode= False
 demo_mode= False
 
 
@@ -39,7 +39,7 @@ def main():
     checkpoint.load_checkpoint(net, train_history, '/best-single.pth.tar')
 
     """Uploading Mean and SD"""
-    path_to_data = '/home/rahil/PoseEstimator/dataset/'
+    path_to_data = '.../multi-view-pose-estimation/dataset/'
 
     #mean and sd of 2d poses in training dataset
     Mean_2D = np.loadtxt(path_to_data + 'Mean_2D.txt')
