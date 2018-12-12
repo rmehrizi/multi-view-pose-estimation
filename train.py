@@ -30,7 +30,7 @@ def main():
     net = torch.nn.DataParallel(net).cuda()
 
     """Uploading Mean and SD"""
-    path_to_data = '/home/rahil/PoseEstimator/dataset/'
+    path_to_data = '.../multi-view-pose-estimation/dataset/'
 
     #mean and sd of 2d poses in training dataset
     Mean_2D = np.loadtxt(path_to_data + 'Mean_2D.txt')
