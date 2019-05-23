@@ -8,7 +8,7 @@ Python 2.7 <br />
 Pytorch v0.4.0 or Pytorch v0.1.12 <br />
 
 ## First of all
-1- Watch our video: 
+1- Watch our video: ??? <br />
 2- Clone this repository and get the dataset. We provide the Human3.6M dataset in ground truth 3d points, camera rotation matrix, and estimated 2d points from Stacked Hourglass network alonge with corresponding confidence extracted from heatmaps.<br />
 ```
 git clone https://github.com/rmehrizi/multi-view-pose-estimation.git
