@@ -10,29 +10,27 @@ Pytorch v0.4.0 or Pytorch v0.1.12 <br />
 ## First of all
 1- Watch our video: ??? <br />
 2- Clone this repository and get the dataset. We provide the Human3.6M dataset in ground truth 3d points, camera rotation matrix, and estimated 2d points from Stacked Hourglass network alonge with corresponding confidence extracted from heatmaps.<br />
+3- Edit genlist4view.py to set path-to-data and generate training/validation list based on the data location
 ```
 git clone https://github.com/rmehrizi/multi-view-pose-estimation.git
-cd PoseEstomator
+cd multi-view-pose-estimation
 wget https://www.googledrive/....
 unzip dataset.zip
 rm dataset.zip
+python genlist4view.py
 ```
 
 ## A quick demo
-1- For a quick demo, edit train4view.py to set path/to/caffe/python/ and change demo_mode to "True". <br />
-2- Download the pre-trained model and visualize the results on randomly selested images. <br />
+1- For a quick demo, edit train4view.py to set path-to-data and change demo_mode to "True" and visualize the results on randomly selested images <br />
 ```
-cd PoseEstomator
-wget https://www.googledrive/....
+cd multi-view-pose-estimation
 python train4view.py
 ```
 
 ## Testing
-1- Edit train4view.py to set path/to/caffe/python/ and change validation_mode to "True". <br />
-2- Download the pre-trained model and Check tracking results in PoseEstimator/result/. <br />
+1- Edit train4view.py to set path-to-data and change validation_mode to "True" and check tracking results in multi-view-pose-estimation/result/. <br />
 ```
-cd PoseEstomator
-wget https://www.googledrive/....
+cd multi-view-pose-estimation
 python train4view.py
 ```
 
