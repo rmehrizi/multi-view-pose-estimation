@@ -4,7 +4,7 @@ from .base_options import BaseOptions
 class TrainOptions(BaseOptions):
     def initialize(self):
         BaseOptions.initialize(self)
-        self.parser.add_argument('--lr', type=float, default=0.0001,
+        self.parser.add_argument('--lr', type=float, default=0.001,
                     help='initial learning rate')
         self.parser.add_argument('--bs', type=int, default=64,
                     help='mini-batch size')
@@ -12,7 +12,7 @@ class TrainOptions(BaseOptions):
                     help='use checkpoint model')
         self.parser.add_argument('--resume_prefix', type=str, default='',
                     help='checkpoint name for resuming')
-        self.parser.add_argument('--nEpochs', type=int, default= 5,
+        self.parser.add_argument('--nEpochs', type=int, default= 200,
                     help='number of total training epochs to run')
         self.parser.add_argument('--best_pckh', type=float, default=0.,
                     help='best result until now')
