@@ -1,6 +1,7 @@
 # Rahil Mehrizi, Oct 2018
 """Predicting 3D Poses from Multi-view 2D Joints"""
 
+import os
 import torch
 import torch.backends.cudnn as cudnn
 import torch.optim
@@ -228,6 +229,7 @@ def validate(val_loader, net, Mean_2D, Mean_Delta, Mean_3D, SD_2D, SD_Delta, SD_
 
     end = time.time()
     DIST_ERROR=0
+    cwd = os.getcwd()
 
     for i, (pts3dg,  root, pts2d1, pts2d2, pts2d3, pts2d4, R1, V1, R2, V2, R3, V3, R4, V4, name) in enumerate(val_loader): 
 
@@ -295,7 +297,7 @@ def validate(val_loader, net, Mean_2D, Mean_Delta, Mean_3D, SD_2D, SD_Delta, SD_
         #saving results
         for n in range(output.size(0)):
             token = name[n].split('/')
-            save_path = '/home/rahil/PoseEstimator/Results/' + token[5] + '/' + token[7] + '/'
+            save_path = cwd + '/Results/' + token[5] + '/' + token[7] + '/'
             PXIO.CreateFolderIfNotExist(save_path)
             save_name = save_path + token[8] 
             np.savetxt(save_name, pred_pts[n].cpu().numpy(), fmt='%.3f')
@@ -320,7 +322,7 @@ def demo(demo_loader, net, Mean_2D, Mean_Delta, Mean_3D, SD_2D, SD_Delta, SD_3D,
     for i, (pts3dg, root, pts2d1, pts2d2, pts2d3, pts2d4, R1, V1, R2, V2, R3, V3, R4, V4, name) in enumerate(demo_loader):
         
         token = name[0].split('/')
-        figuretitle = token[6]+'_'+token[9]+'_frame'+token[10][:-4]+'      '
+        figuretitle = token[len(token)-4]+'_'+token[len(token)-2]+'_frame'+token[len(token)-1][:-4]+'      '
         figuretitles = figuretitles + figuretitle
 
         #plotting 2d poses
