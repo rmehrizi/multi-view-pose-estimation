@@ -12,7 +12,7 @@ Pytorch v0.4.0 or Pytorch v0.1.12 <br />
 ```
 git clone https://github.com/rmehrizi/multi-view-pose-estimation.git
 cd multi-view-pose-estimation
-wget https://www.googledrive/....
+wget https://drive.google.com/file/d/1CQJGSCDxRLiPEw-azTjcV7h6bx6I1xwI/view?usp=sharing
 unzip dataset.zip
 rm dataset.zip
 python genlist4view.py
