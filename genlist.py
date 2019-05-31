@@ -7,7 +7,7 @@ import PXIO
 import os.path
 import re
 
-path_to_data = '/home/rahil/PoseEstimator/dataset/'
+path_to_data = '.../multi-view-pose-estimation/dataset/'
 
 """Training"""
 Subjects = [1, 5, 6, 7, 8]
