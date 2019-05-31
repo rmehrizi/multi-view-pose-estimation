@@ -35,7 +35,7 @@ python train4view.py
 ## Training 
 Training is performed in two steps: <br />
 ###### First Step (single-view):
-1- Edit genlist.py to set path-to-data and generate training/validation lists for single view images. 
+1- Edit genlist.py to set path-to-data and generate training/validation lists for single view images. <br />
 2- Edit train.py to set path-to-data and run it to train the model (2 blocks) and save the best model in exp/single-view <br />
 ```
 cd multi-view-pose-estimation
@@ -43,7 +43,7 @@ python train.py
 ```
 ###### Second Step (multi-view):
 1- Edit options/train-options to set "lr" to 0.0001 and "nEpochs" to 5 . <br />
-2- Edit train4view.py to set path-to-data and change both "demo_mode" and "validation_mode" to "False".
+2- Edit train4view.py to set path-to-data and change both "demo_mode" and "validation_mode" to "False". <br />
 3- Run train4view.py to train the model (4 blocks) and save the best model in exp/multi-view <br />
 ```
 cd multi-view-pose-estimation
