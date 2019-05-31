@@ -123,7 +123,7 @@ def main():
         loss = OrderedDict( [('train_loss', train_loss),('val_loss', val_loss)] )
         pckh = OrderedDict( [('val_pckh', val_pckh)] )
         train_history.update(e, lr, loss, pckh)
-        checkpoint.save_checkpoint(net, train_history)
+        checkpoint.save_checkpoint(net, train_history, 'best-multi.pth.tar')
 
 
 def train(train_loader, net, Mean_2D, Mean_Delta, Mean_3D, SD_2D, SD_Delta, SD_3D, optimizer, epoch, opt):
