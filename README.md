@@ -39,6 +39,7 @@ Training is performed in two steps: <br />
 2- Edit train.py to set path-to-data and run it to train the model (2 blocks) and save the best model in exp/single-view <br />
 ```
 cd multi-view-pose-estimation
+python genlist.py
 python train.py
 ```
 ###### Second Step (multi-view):
