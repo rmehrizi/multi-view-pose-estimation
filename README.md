@@ -1,12 +1,12 @@
 # multi-view-pose-estimation
-This is the code for the paper ??? <br />
+This is the code for the paper Rahil Mehrizi et. al., Automatic Health Problem Detection from Gait Videos Using Deep Neural Networks, https://arxiv.org/abs/1906.01480 <br />
 
 ## Dependencies
 Python 2.7 <br />
 Pytorch v0.4.0 or Pytorch v0.1.12 <br />
 
 ## First of all
-1- Watch our video: ??? <br />
+1- Watch our video: https://drive.google.com/file/d/11wHq3zmBUM-z-OWonfXmMqLv8lHVzL5T/view?usp=sharing <br />
 2- Clone this repository and get the dataset. We provide the Human3.6M dataset in ground truth 3d points, camera rotation matrix, and estimated 2d points from Stacked Hourglass network alonge with corresponding confidence extracted from heatmaps.<br />
 3- Edit genlist4view.py to set path-to-data and generate training/validation lists based on the data location.
 ```
@@ -52,5 +52,5 @@ python train4view.py
 ```
 
 ## Citation
-If you find this code useful in your research, please consider citing our work: ???
+If you find this code useful in your research, please consider citing our work: arXiv:1906.01480
 
