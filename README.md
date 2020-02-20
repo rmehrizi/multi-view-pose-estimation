@@ -52,5 +52,5 @@ python train4view.py
 ```
 
 ## Citation
-If you find this code useful in your research, please consider citing our work: arXiv:1906.01480
+If you find this code useful in your research, please consider citing our work: https://arxiv.org/vc/arxiv/papers/1906/1906.01480v1.pdf
 
