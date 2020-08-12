@@ -1,5 +1,5 @@
 # multi-view-pose-estimation
-This is the code for the paper Rahil Mehrizi et. al., Automatic Health Problem Detection from Gait Videos Using Deep Neural Networks, https://arxiv.org/abs/1906.01480 <br />
+This is the code for the paper Rahil Mehrizi et. al., Automatic Health Problem Detection from Gait Videos Using Deep Neural Networks, https://arxiv.org/abs/1906.01480v1 <br />
 
 ## Dependencies
 Python 2.7 <br />
